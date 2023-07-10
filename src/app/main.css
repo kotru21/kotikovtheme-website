@@ -1,0 +1,112 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+main {
+  overflow-x: hidden; /** fix this **/
+}
+.header {
+  background: url("../../public/background.jpg"), #0a0a0a;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+  height: 100vh;
+  width: 100vw;
+}
+.headerPromoFirst {
+  width: 100%;
+  height: 100%;
+  background: url("../../public/promo2.png");
+  background-size: 20%;
+  background-repeat: no-repeat;
+  background-position: 10% 190%;
+}
+.headerPromoSecond {
+  width: 100%;
+  height: 100%;
+  background: url("../../public/promo1.png");
+  background-size: 30%;
+  background-repeat: no-repeat;
+  background-position: 50% -40%;
+}
+.fullscreenContainer {
+  background: #0a0a0a;
+  height: 100vh; /** remove this **/
+}
+.themeFeatures {
+  background: url("../../public/phone1.png");
+  background-repeat: no-repeat;
+  background-size: 90%;
+  background-position: -350% 0;
+  width: 100%;
+  height: 100%;
+}
+.DarkGradientShade {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, #0a0a0ad3, #0a0a0a00);
+}
+h1 {
+  color: #fff;
+  font-family: Unbounded Variable;
+  font-size: 6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+h2 {
+  color: #fff;
+  font-family: Unbounded Variable;
+  font-size: 2.25rem;
+  font-style: normal;
+  font-weight: 100;
+  line-height: normal;
+}
+purpleColor {
+  color: #9472d5;
+}
+.textContainer {
+  max-width: max-content;
+}
+button {
+  width: fit-content;
+  height: fit-content;
+  padding: 1rem 2rem 1rem 2rem;
+  background: #9472d5;
+}
+button * {
+  color: #fff;
+  font-family: Unbounded Variable;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 100;
+  line-height: normal;
+}
+.mobileWordWrap {
+  display: none;
+}
+@media screen and (max-width: 900px) {
+  h1 {
+    color: #fff;
+    font-family: Unbounded Variable;
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  h2 {
+    color: #fff;
+    font-family: Unbounded Variable;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 100;
+    line-height: normal;
+  }
+  .mobileWordWrap {
+    display: block;
+  }
+  .headerPromoFirst,
+  .headerPromoSecond {
+    background: none;
+  }
+}
