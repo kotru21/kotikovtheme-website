@@ -63,7 +63,7 @@ export default function Home() {
               <h1>Vendetta</h1>
               <p className="text-right">Discord client</p>
               <Image
-                src="/../public/Vendetta-logo.png"
+                src="/public/Vendetta-logo.png"
                 className="mx-auto mt-8"
                 width={300}
                 height={300}
