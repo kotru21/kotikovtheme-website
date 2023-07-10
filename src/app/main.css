@@ -2,6 +2,25 @@
   padding: 0;
   margin: 0;
 }
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #303947;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #9472d5;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #9472d5;
+}
 main {
   overflow-x: hidden; /** fix this **/
 }
@@ -86,6 +105,10 @@ button * {
   display: none;
 }
 @media screen and (max-width: 900px) {
+  .themeFeatures {
+    background-position: 130% 35%;
+    background-size: 160%;
+  }
   h1 {
     color: #fff;
     font-family: Unbounded Variable;
