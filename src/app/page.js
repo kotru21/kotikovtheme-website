@@ -55,9 +55,9 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="fullscreenContainer relative">
-        <div className="footerPromoFirst">
-          <div className="footerPromoSecond">
+      <div className="fullscreenContainer relative ">
+        <div className="footerPromoFirst ">
+          <div className="footerPromoSecond pb-10">
             <div className="lg:absolute m-auto lg:left-0 lg:right-0 textContainer lg:pt-36 pt-16">
               <p className="text-left">based on</p>
               <h1>Vendetta</h1>
