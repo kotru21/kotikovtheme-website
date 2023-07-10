@@ -60,10 +60,15 @@ main {
   width: 100%;
   height: 100%;
 }
-.DarkGradientShade {
+.darkGradientShade {
   width: 100%;
   height: 100%;
   background: linear-gradient(90deg, #0a0a0ad3, #0a0a0a00);
+}
+.darkGradientShadeSecond {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(20deg, #0a0a0a, #0a0a0a00, #0a0a0a00);
 }
 h1 {
   color: #fff;
@@ -88,6 +93,7 @@ purpleColor {
   max-width: max-content;
 }
 button {
+  border-radius: 0.25rem;
   width: fit-content;
   height: fit-content;
   padding: 1rem 2rem 1rem 2rem;
@@ -103,6 +109,22 @@ button * {
 }
 .mobileWordWrap {
   display: none;
+}
+.footerPromoFirst {
+  background-image: url("../../public/background.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+  width: 100%;
+  height: 100%;
+}
+.footerPromoSecond {
+  background-image: url("../../public/background2.png");
+  background-repeat: no-repeat;
+  background-size: 30%;
+  background-position: 0% 100%;
+  width: 100%;
+  height: 100%;
 }
 @media screen and (max-width: 900px) {
   .themeFeatures {

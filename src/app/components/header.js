@@ -13,16 +13,10 @@ import {
 import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from "@heroicons/react/20/solid";
 
 const products = [
-  { name: "Analytics", description: "Get a better understanding of your traffic", href: "#", icon: ChartPieIcon },
-  { name: "Engagement", description: "Speak directly to your customers", href: "#", icon: CursorArrowRaysIcon },
-  { name: "Security", description: "Your customers’ data will be safe and secure", href: "#", icon: FingerPrintIcon },
-  { name: "Integrations", description: "Connect with third-party tools", href: "#", icon: SquaresPlusIcon },
-  { name: "Automations", description: "Build strategic funnels that will convert", href: "#", icon: ArrowPathIcon },
+  { name: "Main", description: "About theme", href: "#", icon: ChartPieIcon },
+  { name: "Features", description: "Theme features", href: "#themeFeatures", icon: CursorArrowRaysIcon },
 ];
-const callsToAction = [
-  { name: "Watch demo", href: "#", icon: PlayCircleIcon },
-  { name: "Contact sales", href: "#", icon: PhoneIcon },
-];
+const callsToAction = [{ name: "How-to", href: "https://whiskas.ru/", icon: PlayCircleIcon }];
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
@@ -37,7 +31,7 @@ export default function Header() {
         <div className="flex lg:flex-1">
           <a href="#" className="-m-1.5 p-1.5">
             <span className="sr-only">Kotikov</span>
-            <img className="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="" />
+            <img className="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=purple&shade=400" alt="" />
           </a>
         </div>
         <div className="flex lg:hidden">
@@ -51,12 +45,15 @@ export default function Header() {
           </button>
         </div>
         <Popover.Group className="hidden lg:flex lg:gap-x-12">
-          <a href="#" className="text-sm font-thin leading-6 text-white">
+          <a href="https://kotikov.is-a.dev" className="text-sm font-thin leading-6 text-white">
             My website
+          </a>
+          <a href="https://whiskas.ru" className="text-sm font-thin leading-6 text-white">
+            How-to
           </a>
         </Popover.Group>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <a href="#" className="text-sm font-thin leading-6 text-white">
+          <a href="https://github.com/kotru21" className="text-sm font-thin leading-6 text-white">
             GitHub
           </a>
         </div>
@@ -66,10 +63,10 @@ export default function Header() {
         <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">
             <a href="#" className="-m-1.5 p-1.5">
-              <span className="sr-only">Your Company</span>
+              <span className="sr-only">Kotikov</span>
               <img
                 className="h-8 w-auto"
-                src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
+                src="https://tailwindui.com/img/logos/mark.svg?color=purple&shade=400"
                 alt=""
               />
             </a>
@@ -89,7 +86,7 @@ export default function Header() {
                   {({ open }) => (
                     <>
                       <Disclosure.Button className="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
-                        Product
+                        about Kotikovtheme
                         <ChevronDownIcon
                           className={classNames(open ? "rotate-180" : "", "h-5 w-5 flex-none")}
                           aria-hidden="true"
@@ -111,30 +108,18 @@ export default function Header() {
                   )}
                 </Disclosure>
                 <a
-                  href="#"
+                  href="https://github.com/kotru21"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
-                  Features
-                </a>
-                <a
-                  href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                >
-                  Marketplace
-                </a>
-                <a
-                  href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                >
-                  Company
+                  GitHub
                 </a>
               </div>
               <div className="py-6">
                 <a
-                  href="#"
+                  href="https://kotikov.is-a.dev"
                   className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
-                  Log in
+                  About me
                 </a>
               </div>
             </div>
