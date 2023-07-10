@@ -19,12 +19,12 @@ export default function Home() {
             <div className="darkGradientShade">
               <Header />
               <div className="textContainer pt-48 lg:pl-48 pl-8">
-                <h1 className="pb-2">
+                <h1 className="pb-4">
                   Kotikov
                   <br className="mobileWordWrap" />
                   <purpleColor>theme</purpleColor>
                 </h1>
-                <h2 className="lg:text-right pb-4">Just some purple thing idk</h2>
+                <h2 className="lg:text-right pb-6">Just some purple thing idk</h2>
                 <div className="lg:text-right">
                   <button
                     className="w-max focus:outline-none focus:ring-4 focus:ring-purple-600 focus:ring-opacity-50"
@@ -72,13 +72,13 @@ export default function Home() {
                 alt="Vendetta logo"
               />
             </div>
-            <div className="lg:absolute lg:right-0 lg:top-36 lg:pr-8 text-right pr-24 pt-8 lg:mt-24">
+            <div className="lg:absolute lg:right-0 lg:top-36 lg:pr-8 text-center lg:pr-24 pt-8 lg:mt-24">
               <h2>My GitHub</h2>
               <a href="https://github.com/kotru21">
                 <button className="w-max mt-6">Check</button>
               </a>
             </div>
-            <div className="lg:absolute lg:left-0 lg:top-36 lg:pl-8 text-left pl-24 pt-8 lg:mt-24">
+            <div className="lg:absolute lg:left-0 lg:top-36 lg:pl-8 text-center lg:pl-24 pt-8 lg:mt-24">
               <h2>Get Vendetta</h2>
               <a href="https://github.com/vendetta-mod/VendettaManager/releases/latest">
                 <button className="w-max mt-6">Get it</button>
