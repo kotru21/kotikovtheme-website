@@ -49,7 +49,7 @@ export default function Header({ text, purpletext }) {
           <Link href="https://kotikov.is-a.dev" className="text-sm font-thin leading-6 text-white">
             My website
           </Link>
-          <Link href="https://whiskas.ru" className="text-sm font-thin leading-6 text-white">
+          <Link href="/how-to" className="text-sm font-thin leading-6 text-white">
             How-to
           </Link>
         </Popover.Group>
