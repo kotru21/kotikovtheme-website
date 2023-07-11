@@ -20,7 +20,7 @@ export default function Home() {
                   <br className="mobileWordWrap" />
                   <purple> progress..</purple>
                 </h1>
-                <h2 className="lg:text-right pb-6">This page isn't done yet</h2>
+                <h2 className="lg:text-right pb-6">This page isn&apos;t done yet</h2>
                 <div className="lg:text-right">
                   <button
                     className="w-max focus:outline-none focus:ring-4 focus:ring-purple-600 focus:ring-opacity-50"
