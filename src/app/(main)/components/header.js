@@ -52,7 +52,7 @@ export default function Header({ text, purpletext }) {
           <Link href="/" className="text-sm font-thin leading-6 text-white">
             Home
           </Link>
-          <Link href="/how-to" className="text-sm font-thin leading-6 text-white">
+          <Link href="/how" className="text-sm font-thin leading-6 text-white">
             How-to
           </Link>
         </Popover.Group>
@@ -116,6 +116,18 @@ export default function Header({ text, purpletext }) {
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
                   GitHub
+                </Link>
+                <Link
+                  href="/"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                >
+                  Home
+                </Link>
+                <Link
+                  href="/how"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                >
+                  how-to
                 </Link>
               </div>
               <div className="py-6">
