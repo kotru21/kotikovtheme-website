@@ -22,7 +22,7 @@ export default function Home() {
                 <h1 className="pb-4">
                   Kotikov
                   <br className="mobileWordWrap" />
-                  <purpleColor>theme</purpleColor>
+                  <purple>theme</purple>
                 </h1>
                 <h2 className="lg:text-right pb-6">Just some purple thing idk</h2>
                 <div className="lg:text-right">
@@ -45,7 +45,7 @@ export default function Home() {
               <h1 className="pb-2 ">
                 focused
                 <br className="mobileWordWrap" />
-                <purpleColor> on</purpleColor>
+                <purple> on</purple>
               </h1>
               <h2 className="text-right lg:text-right pb-12">productivity</h2>
               <Card title="Amoled look" description="Looks confident and powerful" />
