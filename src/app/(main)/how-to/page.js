@@ -1,9 +1,6 @@
 "use client";
 import "../main.css";
-import Image from "next/image";
-import Link from "next/link";
-import Card from "../components/card.js";
-import VendettaLogo from "../../../../public/Vendetta-logo.png";
+
 const base = "https://raw.githubusercontent.com/kotru21/Vendetta-discord-theme/main/theme.json";
 
 const Clipboard = (e) => {
