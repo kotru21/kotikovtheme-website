@@ -1,6 +1,5 @@
 "use client";
 import "./main.css";
-import Link from "next/link";
 import Image from "next/image";
 import Card from "./components/card.js";
 import VendettaLogo from "../../public/Vendetta-logo.png";
@@ -13,9 +12,9 @@ const Clipboard = (e) => {
 export default function Home() {
   return (
     <main>
-      <div className="headerBackground">
-        <div className="headerBackgroundPromoFirst">
-          <div className="headerBackgroundPromoSecond">
+      <div className="header">
+        <div className="headerPromoFirst">
+          <div className="headerPromoSecond">
             <div className="darkGradientShade">
               <div className="textContainer pt-48 lg:pl-48 pl-8">
                 <h1 className="pb-4">

@@ -1,6 +1,7 @@
 "use client";
-import { Fragment, useState } from "react";
-import { Dialog, Disclosure, Popover, Transition } from "@headlessui/react";
+import Link from "next/link";
+import { useState } from "react";
+import { Dialog, Disclosure, Popover } from "@headlessui/react";
 import {
   ArrowPathIcon,
   Bars3Icon,
@@ -22,17 +23,17 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
-export default function Header() {
+export default function Header({ text, purpletext }) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
     <header>
       <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
         <div className="flex lg:flex-1">
-          <a href="#" className="-m-1.5 p-1.5">
+          <Link href="#" className="-m-1.5 p-1.5">
             <span className="sr-only">Kotikov</span>
             <img className="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=purple&shade=400" alt="" />
-          </a>
+          </Link>
         </div>
         <div className="flex lg:hidden">
           <button
@@ -45,31 +46,31 @@ export default function Header() {
           </button>
         </div>
         <Popover.Group className="hidden lg:flex lg:gap-x-12">
-          <a href="https://kotikov.is-a.dev" className="text-sm font-thin leading-6 text-white">
+          <Link href="https://kotikov.is-a.dev" className="text-sm font-thin leading-6 text-white">
             My website
-          </a>
-          <a href="https://whiskas.ru" className="text-sm font-thin leading-6 text-white">
+          </Link>
+          <Link href="https://whiskas.ru" className="text-sm font-thin leading-6 text-white">
             How-to
-          </a>
+          </Link>
         </Popover.Group>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <a href="https://github.com/kotru21" className="text-sm font-thin leading-6 text-white">
+          <Link href="https://github.com/kotru21" className="text-sm font-thin leading-6 text-white">
             GitHub
-          </a>
+          </Link>
         </div>
       </nav>
       <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
         <div className="fixed inset-0 z-10" />
         <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">
-            <a href="#" className="-m-1.5 p-1.5">
+            <Link href="#" className="-m-1.5 p-1.5">
               <span className="sr-only">Kotikov</span>
               <img
                 className="h-8 w-auto"
                 src="https://tailwindui.com/img/logos/mark.svg?color=purple&shade=400"
                 alt=""
               />
-            </a>
+            </Link>
             <button
               type="button"
               className="-m-2.5 rounded-md p-2.5 text-gray-700"
@@ -107,20 +108,20 @@ export default function Header() {
                     </>
                   )}
                 </Disclosure>
-                <a
+                <Link
                   href="https://github.com/kotru21"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
                   GitHub
-                </a>
+                </Link>
               </div>
               <div className="py-6">
-                <a
+                <Link
                   href="https://kotikov.is-a.dev"
                   className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
                   About me
-                </a>
+                </Link>
               </div>
             </div>
           </div>

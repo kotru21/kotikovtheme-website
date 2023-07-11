@@ -1,4 +1,5 @@
 import "./main.css";
+import Link from "next/link";
 
 export default function Custom404() {
   return (
@@ -8,9 +9,9 @@ export default function Custom404() {
           <h1>404</h1>
           <h2 className="pb-4">Something went wrong :/</h2>
           <div className="lg:text-right">
-            <a href="/">
+            <Link href="/">
               <button>Back home</button>
-            </a>
+            </Link>
           </div>
         </div>
       </div>
