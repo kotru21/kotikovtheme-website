@@ -1,0 +1,12 @@
+@tailwind base;
+
+@layer base {
+  @media screen and (min-width: 900px) {
+    html {
+      @apply scroll-smooth;
+    }
+  }
+}
+
+@tailwind components;
+@tailwind utilities;
