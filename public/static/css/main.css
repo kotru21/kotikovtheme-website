@@ -22,29 +22,6 @@
   background: #9472d5;
 }
 
-.headerBackground {
-  background: url("/static/images/background.jpg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: right;
-  height: 100vh;
-}
-.headerBackgroundPromoFirst {
-  width: 100%;
-  height: 100%;
-  background: url("/static/images/promo2.png");
-  background-size: 20%;
-  background-repeat: no-repeat;
-  background-position: 10% 190%;
-}
-.headerBackgroundPromoSecond {
-  width: 100%;
-  height: 100%;
-  background: url("/static/images/promo1.png");
-  background-size: 30%;
-  background-repeat: no-repeat;
-  background-position: 50% -40%;
-}
 .fullscreenContainer {
   background: #0a0a0a;
   min-height: 100vh; /** remove this **/
@@ -57,16 +34,7 @@
   width: 100%;
   height: 100%;
 }
-.darkGradientShade {
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(90deg, #0a0a0ad3, #0a0a0a00);
-}
-.darkGradientShadeSecond {
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(20deg, #0a0a0a, #0a0a0a00, #0a0a0a00);
-}
+
 h1 {
   color: #fff;
   font-family: Unbounded Variable;
@@ -108,22 +76,7 @@ button * {
 .mobileWordWrap {
   display: none;
 }
-.footerPromoFirst {
-  background-image: url("/static/images/background.jpg");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: right;
-  width: 100%;
-  min-height: 100vh;
-}
-.footerPromoSecond {
-  background-image: url("/static/images/background2.png");
-  background-repeat: no-repeat;
-  background-size: 30%;
-  background-position: 0% 100%;
-  width: 100%;
-  min-height: 100vh;
-}
+
 @media screen and (max-width: 900px) {
   .themeFeatures {
     background-position: 130% 35%;
@@ -147,9 +100,5 @@ button * {
   }
   .mobileWordWrap {
     display: block;
-  }
-  .headerBackgroundPromoFirst,
-  .headerBackgroundPromoSecond {
-    background: none;
   }
 }

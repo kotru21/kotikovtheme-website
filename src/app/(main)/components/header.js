@@ -17,7 +17,7 @@ const products = [
   { name: "Main", description: "About theme", href: "#", icon: ChartPieIcon },
   { name: "Features", description: "Theme features", href: "#themeFeatures", icon: CursorArrowRaysIcon },
 ];
-const callsToAction = [{ name: "How-to", href: "https://whiskas.ru/", icon: PlayCircleIcon }];
+const callsToAction = [{ name: "How-to", href: "/how-to", icon: PlayCircleIcon }];
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
