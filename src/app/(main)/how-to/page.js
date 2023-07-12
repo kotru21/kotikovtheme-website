@@ -1,5 +1,5 @@
 "use client";
-import "../main.css";
+import "public/static/css/main.css";
 
 const base = "https://raw.githubusercontent.com/kotru21/Vendetta-discord-theme/main/theme.json";
 

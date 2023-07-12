@@ -1,4 +1,4 @@
-import "./(main)/main.css";
+import "public/static/css/main.css";
 import Link from "next/link";
 
 export default function Custom404() {
