@@ -73,13 +73,13 @@ export default function Home() {
                 alt="Vendetta logo"
               />
             </div>
-            <div className="lg:absolute lg:right-0 lg:top-36 lg:pr-8 text-center lg:pr-24 pt-8 lg:mt-24">
+            <div className="lg:absolute lg:right-0 lg:top-36  text-center lg:pr-24 pt-8 lg:mt-24">
               <h2>My GitHub</h2>
               <Link href="https://github.com/kotru21">
                 <button className="w-max mt-6">Check</button>
               </Link>
             </div>
-            <div className="lg:absolute lg:left-0 lg:top-36 lg:pl-8 text-center lg:pl-24 pt-8 lg:mt-24">
+            <div className="lg:absolute lg:left-0 lg:top-36  text-center lg:pl-24 pt-8 lg:mt-24">
               <h2>Get Vendetta</h2>
               <Link href="https://github.com/vendetta-mod/VendettaManager/releases/latest">
                 <button className="w-max mt-6">Get it</button>
