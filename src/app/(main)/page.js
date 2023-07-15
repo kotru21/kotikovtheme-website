@@ -9,7 +9,9 @@ import gradientStyles from "public/static/css/gradient.module.css";
 import footerStyles from "public/static/css/footer.module.css";
 
 const Clipboard = (e) => {
-  navigator.clipboard.writeText('"https://raw.githubusercontent.com/kotru21/Vendetta-discord-theme/main/theme.json');
+  navigator.clipboard.writeText(
+    '"https://raw.githubusercontent.com/kotru21/Vendetta-discord-theme/main/theme.json'
+  );
 };
 
 export default function Home() {
@@ -25,12 +27,13 @@ export default function Home() {
                   <br className="mobileWordWrap" />
                   <purple>theme</purple>
                 </h1>
-                <h2 className="lg:text-right pb-6 ">Just some purple thing idk</h2>
+                <h2 className="lg:text-right pb-6 ">
+                  Just some purple thing idk
+                </h2>
                 <div className="lg:text-right">
                   <button
                     className="w-max focus:outline-none focus:ring-4 focus:ring-purple-600 focus:ring-opacity-50"
-                    onClick={Clipboard}
-                  >
+                    onClick={Clipboard}>
                     Copy link
                   </button>
                 </div>
@@ -42,16 +45,25 @@ export default function Home() {
       <div className="fullscreenContainer">
         <div className="themeFeatures" id="themeFeatures">
           <div className={gradientStyles.shadeSecond}>
-            <div className="lg:pr-64 pr-8 lg:pt-64 pt-8 text-right">
+            <div className="lg:pr-64 pr-8 lg:pt-64 md:pl-16 pt-8 text-right">
               <h1 className="pb-2 ">
                 focused
                 <br className="mobileWordWrap" />
                 <purple> on</purple>
               </h1>
               <h2 className="text-right lg:text-right pb-12">productivity</h2>
-              <Card title="Amoled look" description="Looks confident and powerful" />
-              <Card title="Open Source" description="You can customize this for yourself!" />
-              <Card title="Purple color" description="purple-themed things just lookscool, aren’t them?" />
+              <Card
+                title="Amoled look"
+                description="Looks confident and powerful"
+              />
+              <Card
+                title="Open Source"
+                description="You can customize this for yourself!"
+              />
+              <Card
+                title="Purple color"
+                description="purple-themed things just lookscool, aren’t them?"
+              />
             </div>
           </div>
         </div>
