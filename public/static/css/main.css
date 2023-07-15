@@ -1,3 +1,4 @@
+
 * {
   padding: 0;
   margin: 0;
@@ -22,54 +23,21 @@
   background: #9472d5;
 }
 
-.header {
-  background: url("../../public/background.jpg"), #0a0a0a;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: right;
-  height: 100vh;
-}
-.headerPromoFirst {
-  width: 100%;
-  height: 100%;
-  background: url("../../public/promo2.png");
-  background-size: 20%;
-  background-repeat: no-repeat;
-  background-position: 10% 190%;
-}
-.headerPromoSecond {
-  width: 100%;
-  height: 100%;
-  background: url("../../public/promo1.png");
-  background-size: 30%;
-  background-repeat: no-repeat;
-  background-position: 50% -40%;
-}
 .fullscreenContainer {
   background: #0a0a0a;
   min-height: 100vh; /** remove this **/
 }
 .themeFeatures {
-  background: url("../../public/phone1.png");
+  background: url("/static/images/phone1.png");
   background-repeat: no-repeat;
   background-size: 90%;
   background-position: -350% 0;
   width: 100%;
   height: 100%;
 }
-.darkGradientShade {
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(90deg, #0a0a0ad3, #0a0a0a00);
-}
-.darkGradientShadeSecond {
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(20deg, #0a0a0a, #0a0a0a00, #0a0a0a00);
-}
+
 h1 {
   color: #fff;
-  font-family: Unbounded Variable;
   font-size: 6rem;
   font-style: normal;
   font-weight: 400;
@@ -77,13 +45,12 @@ h1 {
 }
 h2 {
   color: #fff;
-  font-family: Unbounded Variable;
   font-size: 2.25rem;
   font-style: normal;
   font-weight: 100;
   line-height: normal;
 }
-purpleColor {
+purple {
   color: #9472d5;
 }
 .textContainer {
@@ -99,7 +66,6 @@ button {
 }
 button * {
   color: #fff;
-  font-family: Unbounded Variable;
   font-size: 1.25rem;
   font-style: normal;
   font-weight: 100;
@@ -108,22 +74,7 @@ button * {
 .mobileWordWrap {
   display: none;
 }
-.footerPromoFirst {
-  background-image: url("../../public/background.jpg");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: right;
-  width: 100%;
-  min-height: 100vh;
-}
-.footerPromoSecond {
-  background-image: url("../../public/background2.png");
-  background-repeat: no-repeat;
-  background-size: 30%;
-  background-position: 0% 100%;
-  width: 100%;
-  min-height: 100vh;
-}
+
 @media screen and (max-width: 900px) {
   .themeFeatures {
     background-position: 130% 35%;
@@ -131,7 +82,6 @@ button * {
   }
   h1 {
     color: #fff;
-    font-family: Unbounded Variable;
     font-size: 4rem;
     font-style: normal;
     font-weight: 400;
@@ -139,7 +89,6 @@ button * {
   }
   h2 {
     color: #fff;
-    font-family: Unbounded Variable;
     font-size: 1.5rem;
     font-style: normal;
     font-weight: 100;
@@ -147,9 +96,5 @@ button * {
   }
   .mobileWordWrap {
     display: block;
-  }
-  .headerPromoFirst,
-  .headerPromoSecond {
-    background: none;
   }
 }
