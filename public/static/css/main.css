@@ -1,3 +1,4 @@
+
 * {
   padding: 0;
   margin: 0;
@@ -37,7 +38,6 @@
 
 h1 {
   color: #fff;
-  font-family: Unbounded Variable;
   font-size: 6rem;
   font-style: normal;
   font-weight: 400;
@@ -45,7 +45,6 @@ h1 {
 }
 h2 {
   color: #fff;
-  font-family: Unbounded Variable;
   font-size: 2.25rem;
   font-style: normal;
   font-weight: 100;
@@ -67,7 +66,6 @@ button {
 }
 button * {
   color: #fff;
-  font-family: Unbounded Variable;
   font-size: 1.25rem;
   font-style: normal;
   font-weight: 100;
@@ -84,7 +82,6 @@ button * {
   }
   h1 {
     color: #fff;
-    font-family: Unbounded Variable;
     font-size: 4rem;
     font-style: normal;
     font-weight: 400;
@@ -92,7 +89,6 @@ button * {
   }
   h2 {
     color: #fff;
-    font-family: Unbounded Variable;
     font-size: 1.5rem;
     font-style: normal;
     font-weight: 100;

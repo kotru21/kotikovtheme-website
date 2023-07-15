@@ -20,12 +20,12 @@ export default function Home() {
           <div className={headerStyles.promoSecond}>
             <div className={gradientStyles.shade}>
               <div className="textContainer pt-48 lg:pl-48 pl-8">
-                <h1 className="pb-4">
+                <h1 className="pb-4 ">
                   Kotikov
                   <br className="mobileWordWrap" />
                   <purple>theme</purple>
                 </h1>
-                <h2 className="lg:text-right pb-6">Just some purple thing idk</h2>
+                <h2 className="lg:text-right pb-6 ">Just some purple thing idk</h2>
                 <div className="lg:text-right">
                   <button
                     className="w-max focus:outline-none focus:ring-4 focus:ring-purple-600 focus:ring-opacity-50"
