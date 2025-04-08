@@ -43,13 +43,6 @@ export default function Header({ text, purpletext }) {
         <div className="flex lg:flex-1">
           <Link href="#" className="-m-1.5 p-1.5">
             <span className="sr-only">Kotikov</span>
-            <Image
-              width={100}
-              height={100}
-              className="h-8 w-auto"
-              src="https://tailwindui.com/img/logos/mark.svg?color=purple&shade=400"
-              alt=""
-            />
           </Link>
         </div>
         <div className="flex lg:hidden">

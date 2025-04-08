@@ -8,13 +8,6 @@ export default function Footer() {
           <a
             href="https://kotikov.is-a.dev/"
             className="flex items-center mb-4 sm:mb-0">
-            <Image
-              width={100}
-              height={100}
-              className="h-8 w-auto"
-              src="https://tailwindui.com/img/logos/mark.svg?color=purple&shade=400"
-              alt=""
-            />
             <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
               Kotikov
             </span>

@@ -3,6 +3,11 @@ import "@/styles/main.css";
 import { useState } from "react";
 import { CheckCircleIcon } from "@heroicons/react/24/solid";
 
+// Create a proper React component for the purple text
+const Purple = ({ children }) => {
+  return <span className="text-[#9472d5]">{children}</span>;
+};
+
 const base =
   "https://raw.githubusercontent.com/kotru21/Vendetta-discord-theme/main/theme.json";
 
@@ -25,7 +30,7 @@ export default function Home() {
                 <h1 className="pb-4">
                   Installation
                   <br className="mobileWordWrap" />
-                  <purple> Kotikovtheme</purple>
+                  <Purple> Kotikovtheme</Purple>
                 </h1>
                 <h2 className="pb-6">
                   Follow these simple steps to install the theme
