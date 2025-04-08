@@ -1,4 +1,4 @@
-import "public/static/css/globals.css";
+import "@/styles/globals.css";
 import { Unbounded } from "next/font/google";
 
 const unbounded = Unbounded({ subsets: ["latin"] });

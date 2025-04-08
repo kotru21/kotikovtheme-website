@@ -1,4 +1,3 @@
-
 * {
   padding: 0;
   margin: 0;
@@ -28,7 +27,7 @@
   min-height: 100vh; /** remove this **/
 }
 .themeFeatures {
-  background: url("/static/images/phone1.png");
+  background: url("/images/phone1.png");
   background-repeat: no-repeat;
   background-size: 90%;
   background-position: -350% 0;

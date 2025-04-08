@@ -1,5 +1,5 @@
 .promoFirst {
-  background-image: url("/static/images/background.jpg");
+  background-image: url("/images/background.jpg");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: right;
@@ -7,7 +7,7 @@
   min-height: 100vh;
 }
 .promoSecond {
-  background-image: url("/static/images/background2.png");
+  background-image: url("/images/background2.png");
   background-repeat: no-repeat;
   background-size: 30%;
   background-position: 0% 100%;
