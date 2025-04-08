@@ -27,11 +27,3 @@
   background-repeat: no-repeat;
   background-position: 50% -40%;
 }
-
-/* Сохраняем медиа-запрос */
-@media screen and (max-width: 900px) {
-  .promoFirst,
-  .promoSecond {
-    background: none;
-  }
-}

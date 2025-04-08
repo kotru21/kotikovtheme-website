@@ -5,6 +5,7 @@ import Card from "./components/card.js";
 import BackgroundImage from "./components/BackgroundImage.js";
 import { useState } from "react";
 import { CheckCircleIcon } from "@heroicons/react/24/solid";
+import { useEffect } from "react";
 
 import "@/styles/main.css";
 import headerStyles from "@/styles/header.module.css";
@@ -33,62 +34,113 @@ export default function Home() {
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
   };
+  const [isMobile, setIsMobile] = useState(false);
+
+  // Определяем ширину экрана
+  useEffect(() => {
+    const handleResize = () => setIsMobile(window.innerWidth < 768);
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   return (
     <main>
-      <div className={headerStyles.background}>
-        <BackgroundImage
-          src="/images/background.jpg"
-          position="right"
-          size="contain"
-          className={headerStyles.background}
-          blurDataURL={backgroundBlur}>
-          <div className={headerStyles.promoFirst}>
+      {isMobile ? (
+        // Мобильная версия: отображается только один BackgroundImage с градиентом
+        <div className={headerStyles.background}>
+          <BackgroundImage
+            src="/images/background.jpg"
+            position="right"
+            size="contain"
+            className={headerStyles.background}
+            blurDataURL={backgroundBlur}>
+            <div className={gradientStyles.shade}>
+              <div className="textContainer pt-48 lg:pl-48 pl-8">
+                <h1 className="pb-4 ">
+                  Kotikov
+                  <br className="mobileWordWrap" />
+                  <Purple>theme</Purple>
+                </h1>
+                <h2 className="lg:text-right pb-6 ">
+                  Just some purple thing idk
+                </h2>
+                <div className="lg:text-right">
+                  <button
+                    className="w-max focus:outline-none focus:ring-4 focus:ring-purple-600 focus:ring-opacity-50"
+                    onClick={Clipboard}>
+                    {copied ? (
+                      <>
+                        <CheckCircleIcon className="w-5 h-5 mr-2 inline" />
+                        Copied!
+                      </>
+                    ) : (
+                      "Copy link"
+                    )}
+                  </button>
+                </div>
+              </div>
+            </div>
+          </BackgroundImage>
+        </div>
+      ) : (
+        // Десктопная версия: исходная вложенная структура BackgroundImage
+        <div className={headerStyles.background}>
+          <div className={gradientStyles.shade}>
             <BackgroundImage
-              src="/images/promo2.png"
-              position="10% 190%"
-              size="20%"
-              className={headerStyles.promoFirst}
-              blurDataURL={promo2Blur}>
-              <div className={headerStyles.promoSecond}>
+              src="/images/background.jpg"
+              position="right"
+              size="contain"
+              className={headerStyles.background}
+              blurDataURL={backgroundBlur}>
+              <div className={headerStyles.promoFirst}>
                 <BackgroundImage
-                  src="/images/promo1.png"
-                  position="50% -40%"
-                  size="30%"
-                  className={headerStyles.promoSecond}
-                  blurDataURL={promo1Blur}>
-                  <div className={gradientStyles.shade}>
-                    <div className="textContainer pt-48 lg:pl-48 pl-8">
-                      <h1 className="pb-4 ">
-                        Kotikov
-                        <br className="mobileWordWrap" />
-                        <Purple>theme</Purple>
-                      </h1>
-                      <h2 className="lg:text-right pb-6 ">
-                        Just some purple thing idk
-                      </h2>
-                      <div className="lg:text-right">
-                        <button
-                          className="w-max focus:outline-none focus:ring-4 focus:ring-purple-600 focus:ring-opacity-50"
-                          onClick={Clipboard}>
-                          {copied ? (
-                            <>
-                              <CheckCircleIcon className="w-5 h-5 mr-2 inline" />
-                              Copied!
-                            </>
-                          ) : (
-                            "Copy link"
-                          )}
-                        </button>
+                  src="/images/promo2.png"
+                  position="10% 190%"
+                  size="20%"
+                  className={headerStyles.promoFirst}
+                  blurDataURL={promo2Blur}>
+                  <div className={headerStyles.promoSecond}>
+                    <BackgroundImage
+                      src="/images/promo1.png"
+                      position="50% -40%"
+                      size="30%"
+                      className={headerStyles.promoSecond}
+                      blurDataURL={promo1Blur}>
+                      <div className={gradientStyles.shade}>
+                        <div className="textContainer pt-48 lg:pl-48 pl-8">
+                          <h1 className="pb-4 ">
+                            Kotikov
+                            <br className="mobileWordWrap" />
+                            <Purple>theme</Purple>
+                          </h1>
+                          <h2 className="lg:text-right pb-6 ">
+                            Just some purple thing idk
+                          </h2>
+                          <div className="lg:text-right">
+                            <button
+                              className="w-max focus:outline-none focus:ring-4 focus:ring-purple-600 focus:ring-opacity-50"
+                              onClick={Clipboard}>
+                              {copied ? (
+                                <>
+                                  <CheckCircleIcon className="w-5 h-5 mr-2 inline" />
+                                  Copied!
+                                </>
+                              ) : (
+                                "Copy link"
+                              )}
+                            </button>
+                          </div>
+                        </div>
                       </div>
-                    </div>
+                    </BackgroundImage>
                   </div>
                 </BackgroundImage>
               </div>
             </BackgroundImage>
           </div>
-        </BackgroundImage>
-      </div>
+        </div>
+      )}
       <div className="fullscreenContainer">
         <div className="themeFeatures" id="themeFeatures">
           <div className={gradientStyles.shadeSecond}>
