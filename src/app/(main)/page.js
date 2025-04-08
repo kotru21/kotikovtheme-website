@@ -53,7 +53,7 @@ export default function Home() {
               <h1 className="pb-2 ">
                 focused
                 <br className="mobileWordWrap" />
-                <purple> on</purple>
+                <Purple> on</Purple>
               </h1>
               <h2 className="text-right lg:text-right pb-12">productivity</h2>
               <Card

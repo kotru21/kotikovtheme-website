@@ -1,36 +1,8 @@
 "use client";
 import Link from "next/link";
-import Image from "next/image";
 import { useState } from "react";
-import { Dialog, Disclosure, Popover } from "@headlessui/react";
-import {
-  Bars3Icon,
-  ChartPieIcon,
-  CursorArrowRaysIcon,
-  XMarkIcon,
-} from "@heroicons/react/24/outline";
-import {
-  ChevronDownIcon,
-  PhoneIcon,
-  PlayCircleIcon,
-} from "@heroicons/react/20/solid";
-
-const products = [
-  { name: "Main", description: "About theme", href: "#", icon: ChartPieIcon },
-  {
-    name: "Features",
-    description: "Theme features",
-    href: "#themeFeatures",
-    icon: CursorArrowRaysIcon,
-  },
-];
-const callsToAction = [
-  { name: "How-to", href: "/how-to", icon: PlayCircleIcon },
-];
-
-function classNames(...classes) {
-  return classes.filter(Boolean).join(" ");
-}
+import { Dialog, Popover } from "@headlessui/react";
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
 export default function Header({ text, purpletext }) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
