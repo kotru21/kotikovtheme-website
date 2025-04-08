@@ -14,6 +14,10 @@ const Clipboard = (e) => {
   );
 };
 
+const Purple = ({ children }) => {
+  return <span className="text-[#9472d5] ; text-4xl">{children}</span>;
+};
+
 export default function Home() {
   return (
     <main>
@@ -25,7 +29,7 @@ export default function Home() {
                 <h1 className="pb-4 ">
                   Kotikov
                   <br className="mobileWordWrap" />
-                  <purple>theme</purple>
+                  <Purple>theme</Purple>
                 </h1>
                 <h2 className="lg:text-right pb-6 ">
                   Just some purple thing idk
