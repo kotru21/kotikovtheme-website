@@ -28,7 +28,7 @@ export default function BackgroundImage({
         }}
         placeholder="blur"
         blurDataURL={blurDataURL}
-        onLoadingComplete={() => setLoaded(true)}
+        onLoad={() => setLoaded(true)}
         priority
       />
       <div
