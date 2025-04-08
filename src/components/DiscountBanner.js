@@ -9,7 +9,7 @@ export default function DiscountBanner() {
           <span className="relative z-10 text-white select-none">
             Vendetta is <p> discounted</p>
           </span>
-          <div className="absolute inset-0 bg-red-600 shadow-red-600"></div>
+          <div className="absolute inset-0 bg-red-600 shadow-red-600 shadow-md "></div>
         </Link>
       </div>
     </div>
