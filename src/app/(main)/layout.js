@@ -4,6 +4,7 @@ import { Unbounded } from "next/font/google";
 const unbounded = Unbounded({ subsets: ["latin"] });
 import Header from "./components/header.js";
 import Footer from "./components/footer.js";
+import DiscountBanner from "@/components/DiscountBanner";
 
 export const metadata = {
   title: "Kotikovtheme",
@@ -17,6 +18,7 @@ export default function RootLayout({ children }) {
         <Header />
         {children}
         <Footer />
+        <DiscountBanner />
       </body>
     </html>
   );
