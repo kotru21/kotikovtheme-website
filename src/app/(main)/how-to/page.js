@@ -5,7 +5,7 @@ import { CheckCircleIcon } from "@heroicons/react/24/solid";
 
 // Create a proper React component for the purple text
 const Purple = ({ children }) => {
-  return <span className="text-[#9472d5]">{children}</span>;
+  return <span className="text-[#9472d5] ; text-4xl">{children}</span>;
 };
 
 const base =
