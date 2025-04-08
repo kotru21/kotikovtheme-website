@@ -76,7 +76,7 @@ export default function Home() {
                 Copy the Theme Link
               </h3>
               <p className="text-gray-300 my-2">
-                Click the button below to copy the theme's JSON file link.
+                Click the button below to copy the theme&apos;s JSON file link.
               </p>
               <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 mt-2">
                 <code className="px-3 py-2 text-sm font-mono bg-gray-800 rounded-lg text-gray-300 w-full sm:w-auto overflow-auto">
@@ -106,8 +106,8 @@ export default function Home() {
               </h3>
               <p className="text-gray-300 my-2">
                 Open Discord with Vendetta installed. Go to Settings → Vendetta
-                → Themes → Click on the "+" in the top right corner and paste
-                the copied link.
+                → Themes → Click on the &quot;+&quot; in the top right corner
+                and paste the copied link.
               </p>
             </li>
 
@@ -120,8 +120,8 @@ export default function Home() {
               </h3>
               <p className="text-gray-300 my-2">
                 After adding the theme, activate it by toggling the
-                corresponding switch in Vendetta's theme settings. Discord will
-                instantly update its appearance using Kotikovtheme.
+                corresponding switch in Vendetta&apos;s theme settings. Discord
+                will instantly update its appearance using Kotikovtheme.
               </p>
             </li>
           </ol>
@@ -131,8 +131,8 @@ export default function Home() {
               Having Installation Issues?
             </h3>
             <p className="text-gray-300">
-              If you're experiencing difficulties installing the theme, you can
-              get help through:
+              If you&apos;re experiencing difficulties installing the theme, you
+              can get help through:
             </p>
             <div className="mt-4 flex flex-wrap gap-4">
               <a
