@@ -60,7 +60,7 @@ export default function Home() {
                 website.
               </p>
               <a
-                href="https://vendetta.netlify.app/"
+                href="https://github.com/vendetta-mod/VendettaManager/releases/latest"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center px-4 py-2 mt-2 text-sm font-medium text-white bg-purple-600 rounded-lg hover:bg-purple-700 focus:ring-4 focus:ring-purple-900">
